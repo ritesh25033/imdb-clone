@@ -11,10 +11,10 @@ function App() {
      <Router>
       <Header /> 
       <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-        <Route exact path="movie/:id" element={<Movie/>}></Route>
-        <Route exact path="movies/:type" element={<MovieList/>}></Route>
-        <Route  element={<h1>Error page</h1>}></Route>
+         <Route path="/" element={<Home />}></Route>
+        <Route path="movie/:id" element={<Movie/>}></Route>
+        <Route path="movies/:type" element={<MovieList/>}></Route>
+         <Route path="*" element={<h1>Error page not found 404</h1>}></Route>
       </Routes>
      </Router> 
     </div>
